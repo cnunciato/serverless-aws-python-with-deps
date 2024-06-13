@@ -1,0 +1,12 @@
+name: ${PROJECT}
+description:  ${DESCRIPTION}
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+template:
+  description:  An example that adapts the serverless-aws-python to include Lambda dependencies.
+  config:
+    aws:region:
+      description: The AWS region to deploy into
+      default: us-west-2

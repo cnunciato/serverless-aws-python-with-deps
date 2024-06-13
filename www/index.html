@@ -1,0 +1,13 @@
+<h1>Serverless with Pulumi</h1>
+
+<p>The current time is: </p>
+
+<pre id="date"></pre>.
+
+<script>
+setInterval(() => {
+    fetch("date")
+    .then(response => response.text())
+    .then(data => document.getElementById("date").innerText = data)
+}, 1000);
+</script>
